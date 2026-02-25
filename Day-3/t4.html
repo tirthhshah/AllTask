@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h2>Multiplication Table</h2>
+    <input type="number" placeholder="Enter a number" id="table">
+    <button onclick="mul()">Submit</button>
+
+     <script>
+        function mul(){
+        n = document.getElementById("table").value;
+
+    if (n === null || n.trim() === "" || isNaN(n)){
+    document.writeln("Enter valid input");
+
+}
+else{
+document.writeln("<b>Multiplication Table </b>"+"<br><br>");
+for (let i = 1; i <= 10; i++) {     
+  document.writeln(n + " * " + i + " = " + (n * i) + "<br><br>");
+}}
+}
+    </script>
+
+
+
+
+<!-- <h3>Multiplication Table</h3>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="show2()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function show2() {
+    let number = document.getElementById("num").value;
+    let i = 1;
+    let output = "";
+
+    while (i <= 10) {
+        output += number + " * " + i + " = " + (number * i) + "<br>";
+        i++;
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+</script> -->
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Right shift without (>>)operator</h2>
+    
+
+
+
+
+<script>
+       
+        let p = 80;
+        let q=4;
+        let z = 2 ** q;
+        let w = p / z;
+        document.writeln("After Righr-Shift: " + w);      
+
+
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Right Shift Without Operator</h3>
+
+<input type="number" id="num" placeholder="Enter number">
+<input type="number" id="shift" placeholder="Enter shift value">
+<button onclick="RightShift()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function RightShift() {
+    let n = document.getElementById("num").value;
+    let s = document.getElementById("shift").value;
+
+    let result = Math.floor(n / Math.pow(2, s));
+
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Remove Leading and Trailing Zeros</h3>
+
+<input type="text" id="num" placeholder="Enter number">
+<button onclick="remove()">Remove</button>
+
+<p id="result"></p>
+
+<script>
+function remove() {
+    let n = document.getElementById("num").value;
+
+    
+    let result = parseFloat(n).toString();
+
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Remove Leading and Trailing Zeros</h3>
+
+<input type="text" id="num" placeholder="Enter number">
+<button onclick="remove()">Remove</button>
+
+<p id="result"></p>
+            
+<script>
+function remove() {
+    let n = document.getElementById("num").value;
+
+    
+    let result = Number(n).toString();
+
+    document.getElementById("result").innerHTML = result;   
+}
+</script>
+
+</body>
+</html> -->

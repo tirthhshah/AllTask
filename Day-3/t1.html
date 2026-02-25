@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h2>Enter Text</h2>
+  <input type="text" id="userInput" placeholder="Enter String for append">
+  <button onclick="show()">Submit</button>
+  <p id="output"></p>
+  <script>
+    function append(str) {
+      return str + " something";
+    }                          
+    function show() {
+      const input = document.getElementById("userInput").value;
+      const result = append(input);
+      document.getElementById("output").innerHTML = result;
+}
+  </script>
+
+
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="text1" placeholder="Enter text">
+<button onclick="show1()">Submit</button>
+
+<p id="output1"></p>
+
+<script>
+function add(str1) {
+    return `${str1} something `;
+}
+
+function show1() {
+    let value = document.getElementById("text1").value;
+    document.getElementById("output1").innerHTML = add(value);
+}
+</script>
+
+</body>
+</html> -->

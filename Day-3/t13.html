@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>ASCII</h3>
+
+<input type="text" id="text" placeholder="Enter text">
+<button onclick="convert()">Convert</button>
+
+<p id="result"></p> 
+
+<script>
+function convert() {
+    let str = document.getElementById("text").value;
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+        let code = str.charCodeAt(i);
+        if (code % 2 === 0) {
+            result += str[i].toUpperCase();
+        } else {
+            result += str[i].toLowerCase();
+        }
+    }
+
+    document.getElementById("result").innerText = result;
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>ASCII</h3>
+
+<input type="text" id="text" placeholder="Enter text">
+<button onclick="convert()">Convert</button>
+
+<p id="result"></p>
+
+<script>
+function convert() {
+    let str = document.getElementById("text").value;
+    let result = "";
+    let i = 0;
+
+    while (i < str.length) {
+        let code = str.charCodeAt(i);
+        if (code % 2 === 0) {
+            result += str[i].toUpperCase();
+        } else {
+            result += str[i].toLowerCase();
+        }
+        i++;
+    }
+
+    document.getElementById("result").innerText = result;
+}
+</script>
+
+</body>
+</html> -->

@@ -1,0 +1,19 @@
+.aa{
+    background-color: red;
+    color: whitesmoke;
+    height:50px;
+    font-size: 25px;
+    
+}
+
+.bb{
+    background-color: blue;
+    color: whitesmoke;
+    height:50px;
+    font-size: 25px;
+    margin-bottom: 400px;
+}
+body{
+    background-image: url("new.png");
+    background-size: cover;
+}

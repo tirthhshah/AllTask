@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Factors of a Number</h3>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="showFactors()">Get Factors</button>
+
+<p id="result"></p>
+ 
+<script>
+function showFactors() {
+    let n =(document.getElementById("num").value);
+    let factors = [];
+    for (let i = 1; i <= n; i++) {
+        if (n % i === 0) factors.push(i);
+    }
+    document.getElementById("result").innerText = factors;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Factors of a Number</h3>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="showFactors()">Get Factors</button>
+
+<p id="result"></p>
+
+<script>
+function showFactors() {
+    let n =document.getElementById("num").value;
+    let i = 1;
+    let factors = [];
+    while(i <= n) {
+        if(n % i === 0) factors.push(i);
+        i++;
+    }
+    document.getElementById("result").innerText = factors;
+}
+</script>
+
+</body>
+</html> -->

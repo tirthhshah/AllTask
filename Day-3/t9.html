@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Move Capitals to Front</h3>
+
+<input type="text" id="word" placeholder="Enter a word">
+<button onclick="show()">Move</button>
+
+<p id="result"></p>
+
+<script>
+function move(str) {
+  let cap = "";
+  let small = "";
+
+  for (let ch of str) {
+    if (ch >= 'A' && ch <= 'Z'){
+      cap += ch;
+    } else {
+      small += ch;
+    }
+  } 
+  return cap + small;
+}
+
+function show() {
+  let input = document.getElementById("word").value;
+  let output = move(input);
+  document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

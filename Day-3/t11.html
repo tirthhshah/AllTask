@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+                        
+<h3>Multiply Digits</h3>
+
+<input type="text" id="numbers" placeholder="Enter number">
+<button onclick="Digit()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function Digit(){
+   
+    let sum = document.getElementById("numbers").value.split(' ')    
+           .map(Number).reduce((a,b)=>a+b);
+    
+    
+    while (sum > 9) {
+        sum = sum.toString().split('').reduce((a,b)=>a*b);
+    }
+
+    document.getElementById("result").innerText = sum;
+}
+</script>
+
+</body>
+</html>

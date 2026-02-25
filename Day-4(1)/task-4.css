@@ -1,0 +1,63 @@
+body{
+    background-image: url(iiiii2.jpeg);
+    margin-left: 100px;
+    background-size: cover;
+}
+
+.A{
+    display: flex;
+    gap:200px;
+    
+}
+.B{
+    display: flex;
+    gap:200px;
+      margin-top: 150px;
+
+}
+.C{
+    display: flex;
+    gap:200px;
+    margin-top: 180px;
+}
+
+.aa{
+    height: 80px;
+    width:250px;
+    border-radius: 50%;
+    background-color: burlywood;
+   
+}
+
+.ab{
+    
+    height: 80px;
+    width:250px;
+    border-radius: 50%;
+        background-color: burlywood;
+}
+
+.ac{
+   
+    height: 80px;
+    width:250px;
+    border-radius: 50%;
+    background-color: burlywood;
+
+     
+}
+.aa:hover{
+    opacity: 0;
+ 
+}
+.ab:hover{
+    opacity: 0;
+ 
+}
+
+
+.ac:hover{
+    opacity: 0;
+ 
+}
+

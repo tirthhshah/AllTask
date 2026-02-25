@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Sort String by ASCII</h3>
+
+<input type="text" id="word" placeholder="Enter a string">
+<button onclick="sortt()">Sort</button>
+
+<p id="result"></p>
+
+<script>
+function sortt() {
+    let str = document.getElementById("word").value;
+    let sorted = str.split("").sort().join("");
+    document.getElementById("result").innerHTML = sorted;
+    
+}
+</script>
+
+
+
+
+</body>
+</html> 
+

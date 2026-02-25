@@ -1,0 +1,41 @@
+.nav{
+    display:flex;
+   
+}
+.nav a{
+    margin: 120px;
+    text-decoration: none;
+    border:1px solid black;
+    box-shadow: 2px 4px 10px blue;
+    padding:4px;
+    color:black;
+}
+button:hover{
+    text-decoration: underline;
+    
+}
+
+body{
+    background-color: pink;
+}
+.log
+{
+   margin-top: 140px;
+  margin-left: 500px;
+   border: 1px solid black;
+   width: 400px;
+   padding: 40px;
+   text-align: center;
+   border-radius: 13px;
+   font-size: 20px;
+}
+.log button{
+    background-color: black;
+    color: white;
+    border: 1px;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 30px;
+    width: 80px;
+    margin-left: -1px;
+}

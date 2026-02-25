@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="task-4(2).css">           
+</head>
+<body>
+ 
+
+   
+  <form>                                                       
+
+    <div class="log" style=" background-color: rgb(79, 59, 233); margin-top: 30px; width: 500px; margin-left: 400px; ">
+               <h2>REGISTRATION PAGE</h2>
+               <label>Name:</label>
+               <input type="name" placeholder="Enter your name"  required style="height: 30px; font-size: 16px;"><br><br>
+       Email: <input type="email" placeholder="Enter your email"  required style="height: 30px; font-size: 16px;"><br><br>
+ <div class="gen" style="padding-right: 75px;" > Gender:<input required type="radio" name="gen" id="1">Male
+        <input type="radio" name="gen" id="1">Female</div><br>
+
+        <div class="pas" style="padding-right: 23px;">       <label> Password: </label><input type="password" id="password" style="height: 30px; font-size: 16px;" placeholder="Enter your password" minlength="8" required><br><br>
+<div class="cpas" style="padding-right: 70px;"> <label>Confirm Password: </label><input type="password" id="cpassword" style="height: 30px; font-size: 16px;" placeholder="Enter your password" minlength="8"></div><br>
+                  
+</div>
+
+       <button type="submit" onclick="func()" a href="rconfirm.html">Register</button>&nbsp;&nbsp;<button><a href="task-4(2).html"p style="text-decoration: none; color: white;">Login</a></button>
+            
+
+       
+            </div>         
+</form>
+
+ <script>
+        function func(){
+            var password = document.getElementById('password').value
+            var cpassword = document.getElementById('cpassword').value;    
+        if(password =="12345678"  && cpassword == "12345678"){
+               document.write ("Register success fully")
+                window.location.assign("rconfirm.html")
+            }
+            else                             
+            {
+                alert("Enter the correct details")
+            }
+        }
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+<h3>Swapping number</h3>
+
+<input type="number" id="num" placeholder="Enter number">
+<button onclick="check()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function check() {
+    let n = document.getElementById("num").value;
+
+    if (n < 10 || n > 99) {
+        document.getElementById("result").innerHTML = "Enter valid number";
+        return;
+    }
+    let a = Math.floor(n / 10);
+    let b = n % 10;
+    let swapped = b * 10 + a;
+    let answer = n < swapped;
+    document.getElementById("result").innerHTML = answer;
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Check String</title>
+    </head>
+<body>
+
+<h3>Check if string contains "ee"</h3>
+
+<input type="text" id="text" placeholder="Enter text">
+<button onclick="check()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function check() {
+
+    let str = document.getElementById("text").value;
+
+    if(isNaN(str)){
+    let answer = str.includes("ee");
+    document.getElementById("result").innerHTML = answer;
+    }
+
+   else{
+    document.writeln("Please enter valid input");          
+   }
+    
+                                    
+    
+}
+</script>
+
+</body>
+</html> 
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Check if string contains "ee"</h3>
+
+<input type="text" id="text" placeholder="Enter text">
+<button onclick="check()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function check() {
+    let str = document.getElementById("text").value;
+    
+    let answer = str.indexOf("ee") !== -1;
+
+    document.getElementById("result").innerHTML = answer;
+}
+</script>
+
+</body>
+</html>  -->
+
+
