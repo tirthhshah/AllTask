@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="t9.css">
+</head>
+<body>
+
+<div class="box">
+  <div id="drag" class="circle" draggable="true"></div>
+  <div id="drop" class="circle"></div>
+</div>
+
+<script>
+let size = 80;
+const shrink = 0.75;
+const min = 5;
+
+const drag = document.getElementById("drag");
+const drop = document.getElementById("drop");
+
+drag.ondragstart = e => e.dataTransfer.setData("text","circle");
+
+drop.ondragover = e => e.preventDefault();
+
+drop.ondrop = e => {
+  e.preventDefault();
+  if(size < min) return;
+
+  
+  const c = document.createElement("div");
+  c.className = "circle";
+  c.style.width = size + "px";
+  c.style.height = size + "px";
+  c.style.background = drag.style.background;
+  drop.appendChild(c);
+
+ 
+  size *= shrink;
+
+  drag.style.width = size + "px";
+  drag.style.height = size + "px";
+  drag.style.background = randomColor();
+};
+
+function randomColor(){
+  return `hsl(${Math.random()*360},80%,60%)`;
+}
+</script>
+
+</body>
+</html>
