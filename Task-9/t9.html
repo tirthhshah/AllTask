@@ -19,7 +19,7 @@ const min = 5;
 const drag = document.getElementById("drag");
 const drop = document.getElementById("drop");
 
-drag.ondragstart = e => e.dataTransfer.setData("text","circle");
+drag.ondragstart = e => e.dataTransfer.setData("circle");
 
 drop.ondragover = e => e.preventDefault();
 
