@@ -17,7 +17,7 @@ const database = getDatabase(app);
 document.querySelector(".footer button").addEventListener("click", function (e) {
   e.preventDefault();
 
-  // 🔹 Get values
+
   const fname = document.getElementById("fname").value.trim();
   const lname = document.getElementById("lname").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -36,7 +36,6 @@ document.querySelector(".footer button").addEventListener("click", function (e) 
   if (document.getElementById("travel").checked) hobbies.push("Travel");
   if (document.getElementById("movies").checked) hobbies.push("Movies");
 
-  // 🔴 VALIDATION START
 
   if (fname === "") {
     alert("First name is required");
