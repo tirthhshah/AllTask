@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <title>Create Account</title>
   <link rel="stylesheet" href="t2.css">
-  <script type="module" src="t2.js" defer></script>
+  <script type="module" src="t2.js"></script>
 </head>
 <body>
+
+ <script type="module" defer>
+
+      const range = document.getElementById("range");
+      const incomeBtn = document.getElementById("incomeBtn");
+      incomeBtn.textContent = range.value + "K";
+      range.addEventListener("input", function () {
+        incomeBtn.textContent = this.value + "K";
+      });
+   
+  </script>
+
 
   <div class="form-box" >
     <div class="header">Create Account</div>
@@ -69,8 +81,8 @@
         <div class="rr">
           <label ><b>Income</b></label>
           
-<input type="range" id="range" min="50" max="100"><div class="bu" style="margin-top: -55px; margin-left: 210px;">
-  <button type="button" id="incomeBtn">20K</button></div>
+<input type="range" id="range" min="10" max="100"><div class="bu" style="margin-top: -55px; margin-left: 210px;">
+  <button type="button" id="incomeBtn"></button></div>
           
 
 </div>
